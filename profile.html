@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BuildFast | My Profile</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="page-shell">
+    <header class="site-header" data-site-header></header>
+
+    <main>
+        <div class="section-head">
+            <div>
+                <div class="pill">👤 My Profile</div>
+                <h2>Manage your account details</h2>
+            </div>
+            <p>View and update your personal information, subscription plan, and account settings.</p>
+        </div>
+
+        <div class="split-layout" style="grid-template-columns: 1fr 1fr;">
+            <div class="glass-card" style="padding: 2rem;">
+                <h3>Account Information</h3>
+                <div id="profileInfo">
+                    <div class="profile-detail">
+                        <label>Full Name</label>
+                        <p id="profileName">-</p>
+                    </div>
+                    <div class="profile-detail">
+                        <label>Email Address</label>
+                        <p id="profileEmail">-</p>
+                    </div>
+                    <div class="profile-detail">
+                        <label>Phone Number</label>
+                        <p id="profilePhone">-</p>
+                    </div>
+                    <div class="profile-detail">
+                        <label>Account Type</label>
+                        <p id="profileType">-</p>
+                    </div>
+                    <div class="profile-detail">
+                        <label>Subscription Plan</label>
+                        <p id="profilePlan">-</p>
+                    </div>
+                    <div class="profile-detail">
+                        <label>Member Since</label>
+                        <p id="profileSince">-</p>
+                    </div>
+                    <div class="profile-detail">
+                        <label>Last Login</label>
+                        <p id="profileLastLogin">-</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card" style="padding: 2rem;">
+                <h3>Update Profile</h3>
+                <form id="updateProfileForm" class="form-grid">
+                    <div class="form-field full">
+                        <label>Full Name</label>
+                        <input type="text" id="updateName" required>
+                    </div>
+                    <div class="form-field">
+                        <label>Phone Number</label>
+                        <input type="tel" id="updatePhone" required>
+                    </div>
+                    <div class="form-field">
+                        <label>Company Name</label>
+                        <input type="text" id="updateCompany">
+                    </div>
+                    <div class="form-field full">
+                        <label>Address</label>
+                        <textarea id="updateAddress" rows="2"></textarea>
+                    </div>
+                    <div class="form-field full">
+                        <label>New Password (leave blank to keep current)</label>
+                        <input type="password" id="updatePassword" placeholder="Enter new password">
+                    </div>
+                    <div class="form-field full">
+                        <label>Confirm New Password</label>
+                        <input type="password" id="updateConfirmPassword" placeholder="Confirm new password">
+                    </div>
+                    <div class="form-field full">
+                        <button type="submit" class="btn btn-primary">Update Profile</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="glass-card" style="padding: 2rem; margin-top: 2rem;">
+            <h3>Subscription Management</h3>
+            <div class="grid-3 plan-grid" style="margin-top: 1rem;">
+                <div class="plan-card" data-plan="free">
+                    <div class="plan-badge">Free</div>
+                    <h3>Free Plan</h3>
+                    <div class="plan-price">₹0<span>/month</span></div>
+                    <button class="btn btn-secondary change-plan-btn" data-plan="free">Current Plan</button>
+                </div>
+                <div class="plan-card" data-plan="basic">
+                    <div class="plan-badge">Basic</div>
+                    <h3>Basic Plan</h3>
+                    <div class="plan-price">₹999<span>/month</span></div>
+                    <button class="btn btn-secondary change-plan-btn" data-plan="basic">Switch to Basic</button>
+                </div>
+                <div class="plan-card" data-plan="premium">
+                    <div class="plan-badge">Premium</div>
+                    <h3>Premium Plan</h3>
+                    <div class="plan-price">₹1999<span>/month</span></div>
+                    <button class="btn btn-secondary change-plan-btn" data-plan="premium">Switch to Premium</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-card" style="padding: 2rem; margin-top: 2rem;">
+            <h3>Account Statistics</h3>
+            <div class="stats-grid" id="accountStats">
+                <div class="stat-card">
+                    <h3>Total Orders</h3>
+                    <strong id="totalOrders">0</strong>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Spent</h3>
+                    <strong id="totalSpent">₹0</strong>
+                </div>
+                <div class="stat-card">
+                    <h3>Avg Order Value</h3>
+                    <strong id="avgOrderValue">₹0</strong>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>BuildFast</h3>
+                <p>Instant material delivery for high-velocity construction teams.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="./marketplace.html">Marketplace</a>
+                <a href="./orders.html">Orders</a>
+                <a href="./admin.html">Admin</a>
+                <a href="./profile.html">My Profile</a>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <a href="#">Help Center</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>📧 support@buildfast.com</p>
+                <p>📞 +91 90000 12345</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BuildFast. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="./js/profile.js"></script>
+</body>
+
+</html>

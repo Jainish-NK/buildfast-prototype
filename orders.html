@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BuildFast | Orders</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body class="page-shell">
+  <header class="site-header" data-site-header></header>
+  <main>
+    <div class="section-head">
+      <div><div class="pill">Order History</div><h2>Review every dispatched order.</h2></div>
+      <p>Filter by status, inspect item breakdowns, track progress, and generate invoices.</p>
+    </div>
+    <section class="order-toolbar">
+      <div class="status-tabs" data-status-tabs>
+        <button class="status-tab active" data-status="all">All</button>
+        <button class="status-tab" data-status="confirmed">Confirmed</button>
+        <button class="status-tab" data-status="processing">Processing</button>
+        <button class="status-tab" data-status="out-for-delivery">Out for Delivery</button>
+        <button class="status-tab" data-status="delivered">Delivered</button>
+      </div>
+    </section>
+    <section class="orders-grid" data-orders-list></section>
+  </main>
+  <script type="module" src="./js/orders.js"></script>
+</body>
+</html>

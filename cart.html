@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BuildFast | Cart</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body class="page-shell">
+  <header class="site-header" data-site-header></header>
+  <main>
+    <div class="section-head">
+      <div><div class="pill">Cart & Checkout</div><h2>Review your dispatch basket.</h2></div>
+      <p>Free delivery above ₹5000. Subscription discounts are applied automatically.</p>
+    </div>
+    <section class="split-layout">
+      <div class="checkout-card glass-card">
+        <div class="cart-list" data-cart-list></div>
+      </div>
+      <aside class="checkout-card glass-card">
+        <h3>Order Summary</h3>
+        <div class="invoice-list" data-cart-summary></div>
+        <h3>Checkout</h3>
+        <form class="form-grid" data-checkout-form>
+          <div class="form-field full"><label>Full Name</label><input name="fullName" required /></div>
+          <div class="form-field"><label>Phone</label><input name="phone" required /></div>
+          <div class="form-field"><label>City</label><input name="city" required /></div>
+          <div class="form-field full"><label>Address</label><textarea name="address" required></textarea></div>
+          <div class="form-field"><label>Pincode</label><input name="pincode" required /></div>
+          <div class="form-field"><label>Special Instructions</label><input name="instructions" /></div>
+          <div class="form-field full"><button class="btn btn-primary" type="submit">Place Order</button></div>
+        </form>
+      </aside>
+    </section>
+  </main>
+  <script type="module" src="./js/cart.js"></script>
+</body>
+</html>

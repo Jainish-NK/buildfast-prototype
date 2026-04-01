@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BuildFast | Admin Dashboard</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body class="page-shell">
+  <header class="site-header" data-site-header></header>
+  <main>
+    <div class="section-head">
+      <div><div class="pill">Admin Dashboard</div><h2>Revenue, inventory, and dispatch control.</h2></div>
+      <p>Analytics update from local order data and inventory changes persist via localStorage.</p>
+    </div>
+    <section class="stats-grid" data-admin-stats></section>
+
+    <div class="section-head">
+      <div><h2>7 Day Revenue Trend</h2></div>
+      <p>Quick bar visualization of recent sales activity.</p>
+    </div>
+    <section class="checkout-card glass-card">
+      <div class="chart-bars" data-chart></div>
+    </section>
+
+    <div class="section-head">
+      <div><h2>Best Selling Materials</h2></div>
+      <p>Top movers by quantity and revenue.</p>
+    </div>
+    <section class="checkout-card glass-card" data-best-selling></section>
+
+    <div class="section-head">
+      <div><h2>Inventory</h2></div>
+      <button class="btn btn-primary" data-add-material>Add New Material</button>
+    </div>
+    <section class="admin-table glass-card">
+      <table>
+        <thead><tr><th>ID</th><th>Name</th><th>Category</th><th>Price</th><th>Cost</th><th>Margin</th><th>Stock</th><th>Actions</th></tr></thead>
+        <tbody data-inventory-body></tbody>
+      </table>
+    </section>
+
+    <div class="section-head">
+      <div><h2>Orders Management</h2></div>
+      <p>Update order status from the operations console.</p>
+    </div>
+    <section class="admin-table glass-card">
+      <table>
+        <thead><tr><th>Order ID</th><th>Customer</th><th>Date</th><th>Total</th><th>Status</th></tr></thead>
+        <tbody data-orders-body></tbody>
+      </table>
+    </section>
+  </main>
+  <script type="module" src="./js/admin.js"></script>
+</body>
+</html>

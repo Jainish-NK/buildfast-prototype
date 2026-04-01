@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BuildFast | Sign Up</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="page-shell">
+  <div class="auth-wrap">
+    <section class="auth-panel glass-card">
+      <div class="pill">🚀 Get started</div>
+      <h1>Set up your BuildFast account.</h1>
+      <p class="muted">Choose your role, select a plan, and jump straight into live ordering.</p>
+      <div class="plan-features" style="margin-top: 1rem;">
+        <li>✓ Free plan available with no subscription fee</li>
+        <li>✓ 5% off with Basic plan</li>
+        <li>✓ 15% off with Premium plan</li>
+      </div>
+    </section>
+    <section class="auth-panel glass-card">
+      <h2>Create Account</h2>
+      <form data-signup-form class="form-grid">
+        <div class="form-field full"><label>Full Name</label><input name="fullName" required
+            placeholder="Enter your full name" /></div>
+        <div class="form-field"><label>Email</label><input type="email" name="email" required
+            placeholder="your@email.com" /></div>
+        <div class="form-field"><label>Phone</label><input name="phone" required placeholder="10-digit mobile number" />
+        </div>
+        <div class="form-field"><label>Password</label><input type="password" name="password" minlength="6" required
+            placeholder="Minimum 6 characters" /></div>
+        <div class="form-field"><label>User Type</label>
+          <select name="userType">
+            <option value="contractor">Contractor</option>
+            <option value="builder">Builder</option>
+            <option value="architect">Architect</option>
+          </select>
+        </div>
+        <div class="form-field full"><label>Choose Subscription Plan</label>
+          <select name="subscription">
+            <option value="free">Free Plan (₹0/month) - No discount</option>
+            <option value="basic">Basic Plan (₹999/month) - 5% discount</option>
+            <option value="premium">Premium Plan (₹1999/month) - 15% discount</option>
+          </select>
+        </div>
+        <div class="form-field full">
+          <label class="checkbox-label">
+            <input type="checkbox" required> I agree to the Terms of Service and Privacy Policy
+          </label>
+        </div>
+        <div class="form-field full"><button class="btn btn-primary" type="submit">Create Account →</button></div>
+      </form>
+      <p class="muted">Already have an account? <a href="./login.html">Login here</a></p>
+    </section>
+  </div>
+  <script type="module">
+    import { mountSignup } from "./js/auth.js";
+    mountSignup();
+  </script>
+</body>
+
+</html>
