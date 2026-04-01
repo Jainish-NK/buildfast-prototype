@@ -13,4 +13,4 @@ Instant Construction Material Delivery Web App
 HTML, CSS, JavaScript
 
 ## Live Demo:
-(Add your GitHub Pages link)
+https://jainish-nk.github.io/buildfast-prototype/
