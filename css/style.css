@@ -375,7 +375,7 @@ main {
   gap: 1rem;
 }
 
-.floating-card {
+.floating-card{
   background: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: var(--radius-lg);
@@ -383,8 +383,9 @@ main {
   animation: floatCard 3s ease-in-out infinite;
 }
 
-.floating-card-1 {
+.floating-card-1 h3{
   animation-delay: 0s;
+  color: #ffffffef;
 }
 
 .floating-card-2 {
